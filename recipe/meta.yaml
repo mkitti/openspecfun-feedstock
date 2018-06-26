@@ -17,13 +17,13 @@ build:
 
 requirements:
   build:
-    - toolchain
-    - gcc             # [osx]
-    - libgfortran     # [linux]
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - openlibm 0.5.4
 
   run:
-    - libgfortran
     - openlibm 0.5.4
 
 test:
