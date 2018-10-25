@@ -1,0 +1,24 @@
+From 81ec254798632be61f9c0c512dbd24c86b069395 Mon Sep 17 00:00:00 2001
+From: Sylvain Corlay <sylvain.corlay@gmail.com>
+Date: Thu, 25 Oct 2018 19:38:35 +0200
+Subject: [PATCH 2/2] no-fc-override
+
+---
+ Make.inc | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/Make.inc b/Make.inc
+index 6dec06d..695ea78 100644
+--- a/Make.inc
++++ b/Make.inc
+@@ -14,7 +14,6 @@ bindir = $(prefix)/bin
+ libdir = $(prefix)/lib
+ includedir = $(prefix)/include
+ 
+-FC = gfortran
+ # CFLAGS_add and FFLAGS_add are flags that we always want to include
+ # They are not overridable by the user, whereas CFLAGS and FFLAGS are
+ # simply defaults and are overridable via environment variables or
+-- 
+2.18.0
+
