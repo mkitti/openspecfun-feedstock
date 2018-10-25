@@ -12,6 +12,7 @@ source:
   sha256: {{ sha256 }}
   patches:
     - 0001-no-cc-override.patch
+    - 0002-no-fc-override.patch
 
 build:
   number: 1000

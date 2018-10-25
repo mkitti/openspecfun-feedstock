@@ -1,7 +1,7 @@
 From 917659cfa9708bc1f224298dd382b0c35218bee7 Mon Sep 17 00:00:00 2001
 From: Sylvain Corlay <sylvain.corlay@gmail.com>
 Date: Thu, 25 Oct 2018 19:14:53 +0200
-Subject: [PATCH] no-cc-override
+Subject: [PATCH 1/2] no-cc-override
 
 ---
  Make.inc | 2 --
