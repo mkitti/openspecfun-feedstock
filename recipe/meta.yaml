@@ -15,7 +15,7 @@ source:
     - 0002-no-fc-override.patch
 
 build:
-  number: 1001
+  number: 1002
   skip: true  # [win]
 
 requirements:
