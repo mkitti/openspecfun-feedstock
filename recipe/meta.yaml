@@ -1,6 +1,6 @@
 {% set name = "openspecfun" %}
-{% set version = "0.5.4" %}
-{% set sha256 = "b65725c5d3926688aeb262d1a0b332114734f5193c2a80a41e6e53f5465220ee" %}
+{% set version = "0.5.5" %}
+{% set sha256 = "e3fcce3183005d5404ea5510cfb4c1d5639a42002336b36c6a7d2d8ed7811d2e" %}
 
 package:
   name: {{ name|lower }}
