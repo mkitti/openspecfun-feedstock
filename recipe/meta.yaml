@@ -1,6 +1,6 @@
 {% set name = "openspecfun" %}
-{% set version = "0.5.3" %}
-{% set sha256 = "1505c7a45f9f39ffe18be36f7a985cb427873948281dbcd376a11c2cd15e41e7" %}
+{% set version = "0.5.4" %}
+{% set sha256 = "b65725c5d3926688aeb262d1a0b332114734f5193c2a80a41e6e53f5465220ee" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
     - 0002-no-fc-override.patch
 
 build:
-  number: 1002
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make
   host:
     - openlibm 0.5.4
 
@@ -35,8 +36,6 @@ test:
     - test -f "${PREFIX}/lib/libopenspecfun.a"                           # [unix]
     - test -f "${PREFIX}/lib/libopenspecfun${SHLIB_EXT}"                 # [unix]
 
-    - conda inspect linkages -p "${PREFIX}" "{{ name }}"                 # [unix]
-    - conda inspect objects -p "${PREFIX}" "{{ name }}"                  # [osx]
 
 about:
   home: https://github.com/JuliaLang/openspecfun
