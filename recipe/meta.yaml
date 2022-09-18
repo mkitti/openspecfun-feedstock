@@ -15,7 +15,7 @@ source:
     - 0002-no-fc-override.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -25,10 +25,10 @@ requirements:
     - {{ compiler('cxx') }}
     - make
   host:
-    - openlibm 0.5.4
+    - openlibm
 
   run:
-    - openlibm 0.5.4
+    - openlibm
 
 test:
   commands:
